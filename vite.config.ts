@@ -12,7 +12,7 @@ export default ({mode}: { mode:any}) => {
 
   let build: any = {
     minify: false,
-    outDir: process.env.VITE_MODE,//打包文件名称
+    outDir: "dist",//打包文件名称
     assDir: "assets",//打包静态文件的存储地址
   }
   if(mode === 'production'){
